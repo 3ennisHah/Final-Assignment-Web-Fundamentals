@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+<style> 
+.contact-banner{
+  padding: 40px;
+}
+.invalid{
+  border: 2px solid #FF0000;
+}
+.mb-2{
+  margin-bottom: 20px;
+}
+.mb-4{
+  margin-bottom: 40px;
+}
+p{
+  font-size: 26px;
+}
+.contact-description{
+  margin-bottom: 40px;
+}
+input{
+  padding: 10px;
+  border-radius: 5px;
+  width: 280px;
+  border: 1px solid #007243;
+  font-size: 18px;
+  outline: none;
+  color: #333;
+}
+.error{
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+.form-control{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+label{
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+textarea{
+  width: 600px;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  height: 200px;
+  font-size: 16px;
+}
+.hide{
+  opacity: 0;
+}
+button{
+  color: black;
+  padding: 20px;
+  border: 1px solid #007243;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: #007243;
+}
+
+button:hover{
+  background-image: #007243;
+  color: white;
+}
+form{
+  padding: 40px;
+}
+hr{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 1px;
+  border: none;
+  background-color: #DD0000;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1><a href="home.html" style="color: #e6483c;">PressLine</a></h1>
+    <a href="#navbar" hidden></a>
+    <nav id="navbar">
+        <a href="#" hidden></a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="newspage.html">News</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li class = "dropdown">
+        <a href="Sign-up.html">Sign Up/Login</a>
+        <div class="dropdown-content">
+            <a href="Sign-up.html">Sign Up</a>
+            <a href="Login.html">Login</a>
+        </div>
+      </li>
+    </ul>
+    </nav>
+</header>
+<main> 
+  <div class="contact-banner">
+    <h1>Contact Us</h1>
+
+    <p class="contact-description">
+      We'd love your feedback! Feel Free to leave a message below and submit. :)
+    </p>
+  </div>
+
+  <form name="contact-form">
+    <div class="form-control">
+      <label>Full Name</label>
+      <input name="name"
+        placeholder="First and Last Name" />
+      <div class="error hide">Fullname is required</div>
+    </div>
+
+    <div class="form-control">
+      <label>Email</label>
+      <input
+        name="email"
+        placeholder="e.g. your_email@example.com"
+      />
+      <div class="error hide">Email is invalid</div>
+    </div>
+
+    <div class="form-control">
+      <label>Phone</label>
+      <input name="phone" placeholder="e.g: 123456789"></input>
+      <div class="error hide">Phone is invalid</div>
+    </div>
+
+    <div class="form-control">
+      <label>Message</label>
+      <textarea name="feedback" placeholder="Enter any length of message"></textarea>
+      <div class="error hide">Message is required</div>
+    </div>
+    <hr />
+    <button type="submit">SUBMIT</button>
+  </form>
+  </main>
+  <script src="contact us.js"></script>
+  </body>
+</html>
+

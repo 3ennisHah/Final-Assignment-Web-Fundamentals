@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="newspage.css">
+<meta name ="viewport" content ="width=device-width, initial-scale =1.0">
+<meta charset="utf-8">
+<title> News Page</title>
+<style>
+
+</style>
+</head>
+<body>
+  <header>
+    <h1><a href="home.html" style="color: #e6483c;">PressLine</a></h1>
+    <a href="#navbar" hidden></a>
+    <nav id="navbar">
+        <a href="#" hidden></a>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="newspage.html">News</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+      <li class = "dropdown">
+        <a href="Sign-up.html">Sign Up/Login</a>
+        <div class="dropdown-content">
+            <a href="Sign-up.html">Sign Up</a>
+            <a href="Login.html">Login</a>
+        </div>
+      </li>
+    </ul>
+    </nav>
+</header>
+
+<div class="grid-container">
+    <main> 
+      <p style="padding: 10px 20px 0; font-size: 20px;"> Trending </h2>
+        <button id = "btn" onclick = "audio.play();"> Click Me for Music!</button>
+      <marquee behavior="scroll" direction="left">Anwar Becomes PM-10 of Malaysia</marquee>
+    </main>
+    <div id="sidebar">
+        <h2> Latest News</h2>
+        <hr />
+        <h4 style="text-decoration: underline;"> Today's Top 5</h4>
+        <ol type="1"> 
+          <a href="https://worldofbuzz.com/breaking-anwar-ibrahim-elected-as-10th-pm-of-malaysia/" target="_blank">
+            <li> Anwar Becomes PM-10 of Malaysia</li>
+          </a>
+          <a href="https://www.nytimes.com/2022/12/01/sports/soccer/japan-germany-world-cup-group-e.html" target="_blank">
+            <li> Japan upsets Spain, knocking out Germany from the World Cup 2022</li>
+          </a>
+          <a href="https://www.freemalaysiatoday.com/category/nation/2022/12/01/anwar-hopes-to-announce-cabinet-line-up-in-next-2-or-3-days/" target="_blank">
+            <li> Anwar to meet King at 8am</li>
+          </a>
+          <a href="https://www.thestar.com.my/news/world/2022/12/02/us-stocks-end-mixed-ahead-of-key-jobs-report" target="_blank">
+            <li> U.S. stocks end mixed ahead of key jobs report</li>
+          </a>
+          <a href="https://www.thestar.com.my/news/world/2022/12/02/ukraine-has-lost-between-10000-and-13000-soldiers-in-war---official" target="_blank">
+            <li> Casualties in Ukraine Soldiers so far</li>
+          </a>
+        </ol>
+    </div>
+    <div id="grid-item1">
+      <article> 
+        <h2> Risks of Artificial Intelligence</h2>
+        <img src="risks-of-artificial-intelligence.png" width="300px" height="200px">
+        <p> 
+          The voices warning against AI's present and potential pitfalls are becoming more and more audible as it becomes more 
+          sophisticated and pervasive. Unease abounds on many fronts, including the growing automation of some jobs, gender and 
+          racial bias problems resulting from outdated information sources, and autonomous weapons that operate without human oversight 
+          (to name a few). And the process is still very young.
+        </p>
+      </article>
+    </div>
+    <div id="grid-item2">
+      <article> 
+        <h2> What is Sustainable Living?</h2>
+        <img src="sustainableliving.png" width="300px" height="200px">
+        <p> 
+          Sustainable living is a way of life and a philosophy. The term is as widely used as it is complex. Famous campaigners, NGOs, 
+          and lifestyle bloggers promote it, and it is promoted in marketing and advertising for anything from cotton t-shirts to water-saving showerheads. 
+          What does it actually mean, though? Living sustainably, in general, is making decisions and acting in ways that promote the wellbeing of both
+          people and the environment while staying within our means. 
+        </p>
+      </article>
+    </div>
+    <div id="grid-item3">
+      <article>
+        <h2> How to Stop Climate Change</h2>
+        <img src="climatechange.png" width="300px" height="200px">
+        <p>
+          More than we can imagine, the effects of climate change are already being felt on our globe. All throughout the planet, temperatures are rising, and 
+          we are seeing unprecedented shifts in precipitation patterns. Pollution is the primary factor contributing to these terrible repercussions on our world.
+          We can always take action to combat climate change, which is a blessing. It is our duty to take action against these dreadful developments in order to 
+          protect the earth for coming generations. Saving the environment begins with us.
+        </p>
+      </article>
+    </div>
+    <div id="footer">
+      <p> Copyright &copy; 2022-2022. All rights reserved.</p>
+    </div>
+</div>
+
+
+
+<button class ="donate-popup" onclick="openform()"> Donations</button>
+<div class="popup" id ="popupForm">
+  <form action="/action_page.php" class="popup-container" method="get">
+    <h1> Donations</h1>
+    <label for ="name">Full Name</label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <label for="accountNum">Account Number </label>
+    <input type="number" placeholder="Account Number" name="accountNum" required>
+    <label for="amount"> Amount </label>
+    <input type="number" placeholder="Amount" name="amount" required>
+    <button type="submit" class="donate-button"> Donate </button>
+    <button type="button" class="close-button" onclick="closeform()">Close</button>
+  </form>
+</div>
+
+
+<script> 
+  function openform(){
+    document.getElementById("popupForm").style.display = "block";
+  }
+  function closeform(){
+    document.getElementById("popupForm").style.display = "none";
+  }
+  const audio = new Audio() 
+  audio.src = "audio.mp3";
+</script>
+</body>
+</html>
+
+
